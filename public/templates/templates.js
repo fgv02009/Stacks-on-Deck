@@ -312,6 +312,18 @@ __p += '<div class="card ' +
 return __p
 };
 
+this["JST"]["templates/passingPlayer.tpl"] = function(obj) {
+obj || (obj = {});
+var __t, __p = '', __e = _.escape;
+with (obj) {
+__p += '<li><a href="#">' +
+((__t = ( username )) == null ? '' : __t) +
+'</a></li>';
+
+}
+return __p
+};
+
 this["JST"]["templates/player.tpl"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
