@@ -12,8 +12,8 @@ var Card = Backbone.Model.extend({
   },
 
   setActive: function(){
-    console.log("this should be a table not a hand:"+ this.collection)
     this.collection.setActiveCard(this);
+    this.setActiveClass();  
   },
 
   toString: function() {
@@ -24,7 +24,6 @@ var Card = Backbone.Model.extend({
     }
     return suit + value[0].toUpperCase() + value.slice(1);
   }
-
   
 
 })
